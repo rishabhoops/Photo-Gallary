@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: cadetblue;
+            margin-top: 20px;
+            color: white;
+        }
+        h1{
+            text-align: center;
+        }
+        .thumbnaile img{
+            height: 80px;
+            border: 4px salmon;
+            padding: 2px;
+            margin: 0px 10px 10px 0px;
+        }
+        .thumbnaile img:hover{
+            border: 4px solid blue;
+        }
+        .container{
+            text-align: center;
+        }
+        .preview img{
+            padding: 1px;
+            border: 4px solid #444;
+            padding: 1px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Photo Gallary</h1>
+        <div class="thumbnaile">
+            <img onmouseover="preview.src=img1.src" name="img1" src="image/1.jpg" />
+            <img onmouseover="preview.src=img2.src" name="img2" src="image/2.jpg" />
+            <img onmouseover="preview.src=img3.src" name="img3" src="image/3.jpg" />
+            <img onmouseover="preview.src=img4.src" name="img4" src="image/4.jpg" />
+        </div>
+        <div class="preview">
+            <img name="preview" src="image/1.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
